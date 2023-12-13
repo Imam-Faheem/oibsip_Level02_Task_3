@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body{
+    width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #3493db, #227cc1, #94dbf5, #3582bd, #34badb, #1f9af7);
+        background-size: 600% 100%;
+        animation: gradient 16s linear infinite;
+        animation-direction: alternate;
+  }
+  @keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 100%
+    }
+}
+  
+  .todowrap {
+    /* background-color: #3b7bcb; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+ 
+  .todowrap>h1{
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+  
+  }
+  
+  
+  
+  .todo-container {
+    background-color: #fff;
+    max-width: 70%;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  @media (max-width:980px) {
+
+    .todo-container {
+      background-color: #fff;
+      max-width: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+
+
+  .add-task-wrap {
+    padding: 16px;
+    text-align: center;
+    opacity: 1;
+    background: linear-gradient(45deg, #3582bd, #3589bd, #2a92e1, #2d8bd3, #3582bd, #50abf1);
+    color: #344767;
+    box-shadow: #00000024 0rem 0.25rem 1.25rem 0rem,
+      #00bbd466 0rem 0.4375rem 0.625rem -0.3125rem;
+    border-radius: 8px;
+
+  }
+
+
+  
+  .list-input-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 16px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #3582bd, #3589bd, #2a92e1, #2d8bd3, #3582bd, #50abf1);
+  }
+  
+  .input-filed {
+    border: 0;
+    height: 30px;
+    margin: 0px;
+    width: 100%;
+    color: #3b3e42;
+    padding: 20px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 4px;
+
+  }
+  @media (max-width:577px) {
+    .todowrap>h1{
+    
+      margin-top: 30px;
+    }
+    .todo-container {
+      padding: 50px 5px;
+    }
+
+    .todowrap {
+      padding: 0%;
+    }
+    .input-filed {
+      border: 0;
+      height: 30px;
+      margin: 0px;
+      width: 70%;
+      color: #3b3e42;
+      padding: 20px 5px ;
+      font-size: 15px;
+      outline: none;
+      border-radius: 4px;
+  
+    }
+    .list-input-box {
+
+  overflow-x: scroll;
+    }
+  }
+  
+  .btn-sub {
+    width: 120px;
+    height: 40px;
+    padding: 0 3px;
+    background-color: #fff;
+    border: none;
+    letter-spacing: 0;
+    color: #2196f3;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.2s transform ease;
+    transition: 0.2s background-color ease;
+
+  }
+  .btn-sub:hover{
+    background-color: #000000;
+    color: white;
+  }
+  .btn-sub:focus{
+    transform: scale(1.05);
+  }
+  
+  .todo-task-list {
+    margin-top: 30px;
+  }
+  
+  .heading-tasklist {
+    font-size: 24px;
+    color: #2196f3;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+    
+    
